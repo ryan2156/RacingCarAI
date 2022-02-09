@@ -19,8 +19,7 @@ class MLPlay:
 
     def update(self, scene_info):
         # Make the caller to invoke `reset()` for the next round.
-        if (scene_info["status"] == "GAME_OVER" or
-                scene_info["status"] == "GAME_PASS"):
+        if (scene_info["status"] == "GAME_OVER" or scene_info["status"] == "GAME_PASS"):
             return "RESET"
 
         if not self.ball_served:

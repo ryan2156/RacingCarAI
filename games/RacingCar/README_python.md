@@ -8,7 +8,7 @@
     * 手動模式：
 `python MLGame.py -m racing_car <the number of user> [game_mode] [car_num] [game_times] [sound]`
     * 機器學習模式：
-`python MLGame.py -i ml_play_template.py racing_car <the number of user> [game_mode] [car_num] [game_times] [sound]`
+`python MLGame.py -i ml_play_template.py RacingCar <the number of user> [game_mode] [car_num] [game_times] [sound]`
 
 ### 遊戲參數
 
@@ -48,9 +48,9 @@
 * `"y"`：數值，玩家的y座標。
 * `"distance"`：數值，玩家已前進的距離。
 * `"velocity"`：數值，玩家當前的速度
-* `"cars_pos"`：`[(x,y)]` :list裡面包含數個tuple。內容包含場上所有車子的位置。
+* `"all_cars_pos"`：`[(x,y)]` :list裡面包含數個tuple。內容包含場上所有車子的位置。
 金幣模式下，字典內容將新增金幣位置:
-* `"coin"`：`[(x, y)]` list裡面包含數個tuple。金幣的位置。
+* `"coin"`：`[(x, y)]` list裡面包含數個tuple。金幣的位置。a
 * `"coin_num"`：數值，玩家當前已獲得的金幣數量
 
 #### 遊戲指令
